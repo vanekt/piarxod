@@ -1,0 +1,31 @@
+.joke {
+  background-color: #ffffcc;
+  width: 200px;
+  margin: 0 50px 20px;
+
+  h3 {
+    margin: 0;
+    font-family: Comic Sans MS;
+    font-size: 24px;
+    padding: 5px 10px;
+    font-weight: normal;
+  }
+
+  p {
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 1.3em;
+    text-align: center;
+  }
+}
+
+.smile {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 380px) {
+  .joke {
+    margin: 0 0 20px;
+  }
+}

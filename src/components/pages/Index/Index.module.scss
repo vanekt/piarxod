@@ -1,0 +1,87 @@
+.welcome {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 240px;
+}
+
+.welcomeText {
+  font-family: Comic Sans MS;
+  font-size: 40px;
+  line-height: normal;
+  text-align: center;
+  margin: 30px 10px 10px;
+  position: relative;
+  bottom: 30px;
+
+  color: #be0dea;
+  text-transform: uppercase;
+}
+
+.largeLogo {
+  width: 381px;
+  max-width: 90%;
+}
+
+.desc {
+  font-size: 40px;
+  line-height: normal;
+  text-align: center;
+  margin: 0 10px 20px;
+  color: #cd1818;
+}
+
+.content {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.telegram,
+.youtube {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #01f829;
+}
+
+.youtubeImage {
+  width: 195px;
+  max-width: 100%;
+}
+
+.telegramImage {
+  width: 200px;
+  max-width: 100%;
+}
+
+.greenText {
+  font-size: 24px;
+  text-align: center;
+  color: #01f829;
+}
+
+.instagram {
+  font-size: 24px;
+  text-align: center;
+  color: #01f829;
+  margin: 0;
+  padding: 10px 10px 0;
+  text-transform: uppercase;
+
+  a {
+    color: inherit;
+    font-weight: bold;
+  }
+}
+
+.mainPhoto {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 50px;
+}

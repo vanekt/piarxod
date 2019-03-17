@@ -1,0 +1,86 @@
+.header {
+  background: linear-gradient(87.61deg, #b3acac 0%, #3e3d3d 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 115px;
+  max-width: 100%;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  li {
+    margin: 10px 15px;
+    a {
+      min-width: 200px;
+      display: inline-block;
+      line-height: 64px;
+
+      background: #2e45c2;
+      border: 1px solid #000000;
+      color: #000;
+      text-decoration: none;
+
+      font-family: Times New Roman;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}
+
+.ourEmail {
+  font-family: Times New Roman;
+  font-size: 24px;
+  line-height: normal;
+  text-align: center;
+
+  color: #000000;
+}
+
+.email {
+  color: #cd1818;
+}
+
+@media (max-width: 1600px) and (min-width: 1280px) {
+  .menu {
+    li {
+      a {
+        min-width: 140px;
+        display: inline-block;
+        line-height: 64px;
+
+        background: #2e45c2;
+        border: 1px solid #000000;
+        color: #000;
+        text-decoration: none;
+
+        font-family: Times New Roman;
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  .ourEmail {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .logo {
+    margin-top: 20px;
+    width: 230px;
+  }
+}

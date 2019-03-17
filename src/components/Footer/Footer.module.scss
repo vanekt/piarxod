@@ -1,0 +1,18 @@
+.footer {
+  background: linear-gradient(87.61deg, #b3acac 0%, #3e3d3d 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.staff {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
