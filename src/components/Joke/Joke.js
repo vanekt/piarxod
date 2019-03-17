@@ -6,7 +6,7 @@ const defaultJoke = `В глубине эдемских рощ отродясь 
 export default () => {
   const [joke, setJoke] = useState('Загрузка...');
 
-  useEffect(() => {
+  const loadNewJoke = () => {
     fetch('http://piar-khod.ru/api.php')
       .then(resp => resp.json())
       .then(j => setJoke(j.content))
@@ -14,13 +14,16 @@ export default () => {
         console.warn('Joke loading failure', e);
         setJoke(defaultJoke);
       });
-  }, []);
+  };
+
+  useEffect(loadNewJoke, []);
 
   return (
     <div className={styles.joke}>
       <h3>Анекдот дня!</h3>
       <p>{joke}</p>
       <img
+        onClick={loadNewJoke}
         className={styles.smile}
         src={`${process.env.PUBLIC_URL}img/smile/1x.png`}
         srcSet={`
