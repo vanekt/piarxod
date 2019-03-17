@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styles from './Index.module.scss';
 
 export default () => (
-  <div>
+  <Fragment>
     <div className={styles.welcome}>
       <p className={styles.welcomeText}>Добро пожаловать в</p>
       <img
@@ -15,13 +15,11 @@ export default () => (
         title="Пиар Ход"
       />
     </div>
-    <div>
-      {/* eslint-disable-next-line */}
-      <marquee className={styles.desc}>
-        ПиарХод это лидеры на рынке юга россии по производству рекламно-полиграфической
-        промышленности, банеров и дизайнов сайтов.
-      </marquee>
-    </div>
+    {/* eslint-disable-next-line */}
+    <marquee className={styles.desc}>
+      ПиарХод это лидеры на рынке юга россии по производству рекламно-полиграфической
+      промышленности, банеров и дизайнов сайтов.
+    </marquee>
     <div className={styles.content}>
       <a
         className={styles.youtube}
@@ -83,5 +81,5 @@ export default () => (
         t.me/pr_khod
       </a>
     </p>
-  </div>
+  </Fragment>
 );
