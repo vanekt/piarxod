@@ -76,7 +76,7 @@ export default () => (
       </a>
     </div>
     <p className={styles.instagram}>
-      Наш телеграм:
+      Наш телеграм:{' '}
       <a href="//t.me/pr_khod" target="_blank" rel="noopener noreferrer">
         t.me/pr_khod
       </a>
