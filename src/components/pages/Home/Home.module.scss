@@ -85,3 +85,16 @@
   max-width: 100%;
   margin: 0 50px;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    justify-content: space-around;
+  }
+}

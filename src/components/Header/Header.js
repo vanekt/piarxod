@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 
 const onMenuItemClick = () => alert('Раздел находится в разработке');
@@ -6,7 +7,7 @@ const menuItems = ['Листовки', 'Баннеры', 'Сайт-визитк�
 
 export default () => (
   <header className={styles.header}>
-    <a href="/">
+    <Link to={`/`}>
       <img
         className={styles.logo}
         src={`${process.env.PUBLIC_URL}img/header/1x.png`}
@@ -16,19 +17,21 @@ export default () => (
         alt="logo"
         title="Пиар Ход"
       />
-    </a>
-    <ul className={styles.menu}>
-      {menuItems.map(item => {
-        return (
-          <li key={item}>
-            {/*eslint-disable-next-line*/}
-            <a href="#" onClick={onMenuItemClick}>
-              {item}
-            </a>
-          </li>
-        );
-      })}
-    </ul>
+    </Link>
+    <nav>
+      <ul className={styles.menu}>
+        {menuItems.map(item => {
+          return (
+            <li key={item}>
+              {/*eslint-disable-next-line*/}
+              <a href="#" onClick={onMenuItemClick}>
+                {item}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
     <p className={styles.ourEmail}>
       Наша почта: <span className={styles.email}>pr-khod@mail.ru</span>
     </p>

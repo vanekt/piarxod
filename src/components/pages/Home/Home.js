@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
-import styles from './Index.module.scss';
+import Joke from './Joke';
+import Clippy from './Clippy';
+import styles from './Home.module.scss';
 
 export default () => (
   <Fragment>
@@ -81,5 +83,10 @@ export default () => (
         t.me/pr_khod
       </a>
     </p>
+
+    <div className={styles.footer}>
+      <Joke />
+      <Clippy />
+    </div>
   </Fragment>
 );
