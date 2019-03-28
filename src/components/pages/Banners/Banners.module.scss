@@ -56,8 +56,18 @@
 }
 
 @media (max-width: 440px) {
+  .top {
+    display: none;
+  }
+
   .button {
     width: 250px;
     height: 250px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .button {
+    background-image: url('./img/button/2x.png');
   }
 }

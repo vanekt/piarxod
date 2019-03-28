@@ -5,7 +5,6 @@ export default () => (
   <Fragment>
     <div className={styles.top}>
       <img
-        className={styles.leftPin}
         src={`${process.env.PUBLIC_URL}img/banners/1x.jpg`}
         srcSet={`
           ${process.env.PUBLIC_URL}img/banners/1x.jpg 1x,
