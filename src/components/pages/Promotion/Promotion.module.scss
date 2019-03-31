@@ -6,6 +6,15 @@
   overflow: hidden;
 }
 
+.topImg {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.loadingImg {
+  opacity: 1;
+}
+
 .topText1 {
   position: absolute;
   left: 80px;

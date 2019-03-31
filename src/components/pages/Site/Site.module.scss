@@ -6,6 +6,15 @@
   overflow: hidden;
 }
 
+.topImg {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.loadingImg {
+  opacity: 1;
+}
+
 .topText {
   font-family: Times New Roman;
   font-size: 40px;
