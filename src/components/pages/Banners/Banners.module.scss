@@ -1,16 +1,20 @@
 .top {
-  background-color: #2079d3;
-  height: 900px;
   text-align: center;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .topImg {
   opacity: 0;
-  transition: opacity 0.3s ease-out;
+  width: 0;
+  transition: opacity 0.3s ease-out, width 0.3s ease-out;
 }
 
 .loadingImg {
   opacity: 1;
+  width: 100%;
 }
 
 .bottom {
