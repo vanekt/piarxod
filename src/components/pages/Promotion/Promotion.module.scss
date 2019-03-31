@@ -1,0 +1,196 @@
+.top {
+  background-color: #030303;
+  height: 937px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.topText1 {
+  position: absolute;
+  left: 80px;
+  top: 40px;
+
+  font-family: Impact;
+  font-size: 42px;
+  line-height: normal;
+
+  color: #01f829;
+}
+
+.topText2 {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  padding-right: 20px;
+
+  font-family: Times New Roman;
+  font-size: 42px;
+  line-height: normal;
+
+  width: 55%;
+  text-align: left;
+
+  color: #fd0000;
+}
+
+.bottom {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto 100px;
+}
+
+.bottomLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.yellowBlock {
+  background: #ffffcc;
+  padding: 50px 20px 50px 0;
+  margin-right: 40px;
+
+  font-family: Times New Roman;
+  font-size: 16px;
+
+  color: #000000;
+
+  p {
+    padding-left: 60px;
+  }
+}
+
+.starList {
+  padding-left: 0;
+
+  li {
+    background-image: url('./img/star/1x.png');
+    background-repeat: no-repeat;
+    background-position: left 4px;
+    background-size: 42px;
+    list-style: none;
+    padding-left: 60px;
+    margin-bottom: 10px;
+
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.buttonLink {
+  text-decoration: none;
+}
+
+.button {
+  width: 449px;
+  line-height: 175px;
+  padding-right: 15px;
+  background-image: url('./img/button/1x.png');
+
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-family: Times New Roman;
+  font-size: 30px;
+
+  color: #000000;
+}
+
+.photo {
+  width: 703px;
+  height: 937px;
+  background: url('./img/photo/1x.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  font-family: Comic Sans MS;
+  color: #ffffff;
+  padding: 27px;
+
+  font-size: 24px;
+
+  color: #ffffff;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1280px) {
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .yellowBlock {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .topText1 {
+    top: 20px;
+    left: 0;
+  }
+
+  .topText2 {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .photo {
+    width: 350px;
+    height: 468px;
+  }
+}
+
+@media (max-width: 600px) {
+  .topText2 {
+    font-size: 32px;
+  }
+
+  .button {
+    width: 290px;
+    line-height: 115px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .topText1 {
+    top: 0;
+    font-size: 32px;
+  }
+
+  .topText2 {
+    bottom: 0;
+  }
+
+  .photo {
+    width: 290px;
+    height: 468px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .starList li {
+    background-image: url('./img/star/2x.png');
+  }
+
+  .photo {
+    background-image: url('./img/photo/2x.jpg');
+  }
+}
