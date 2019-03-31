@@ -1,0 +1,136 @@
+.top {
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.bottom {
+  width: 90%;
+  margin: 50px auto 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.grayBlock {
+  background: #b3acac;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.whiteText {
+  font-family: Times New Roman;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.blackText {
+  font-family: Times New Roman;
+  font-size: 18px;
+
+  color: #000000;
+}
+
+.photo {
+  width: 831px;
+  height: 467px;
+
+  background: url('./img/photo/1x.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  flex-shrink: 0;
+}
+
+.buttonLink {
+  text-decoration: none;
+}
+
+.button {
+  width: 408px;
+  height: 171px;
+
+  background-image: url('./img/button/1x.png');
+
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-family: Impact;
+  font-size: 18px;
+  padding: 0 80px;
+  margin: 20px 0 30px;
+
+  color: #000000;
+}
+
+.photoCaption {
+  color: transparent;
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 1280px) {
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .photo {
+    width: 622px;
+    height: 349px;
+  }
+}
+
+@media (max-width: 700px) {
+  .photo {
+    width: 415px;
+    height: 233px;
+  }
+}
+
+@media (max-width: 420px) {
+  .photo {
+    width: 290px;
+    height: 163px;
+  }
+
+  .button {
+    width: 290px;
+    height: 115px;
+    font-size: 14px;
+  }
+
+  .photoCaption {
+    color: #be0dea;
+    font-weight: bold;
+    position: static;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .photo {
+    background-image: url('./img/photo/2x.jpg');
+  }
+
+  .button {
+    background-image: url('./img/button/2x.png');
+  }
+}

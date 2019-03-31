@@ -41,11 +41,13 @@ export default () => (
         {Array.apply(null, { length: 25 }).map((_, idx) => {
           return (
             <div key={idx} className={styles.flierBottomText}>
-              Заказать яркую
-              <br />
-              листовку на бумаге
-              <br />
-              класса ЛЮКС
+              <a href="mailto:pr-khod@mail.ru" className={styles.buttonLink}>
+                Заказать яркую
+                <br />
+                листовку на бумаге
+                <br />
+                класса ЛЮКС
+              </a>
             </div>
           );
         })}

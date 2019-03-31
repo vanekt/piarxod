@@ -9,7 +9,7 @@ export default () => (
         srcSet={`
           ${process.env.PUBLIC_URL}img/site/1x.jpg 1x,
           ${process.env.PUBLIC_URL}img/site/2x.jpg 2x`}
-        alt="Баннеры"
+        alt="Сайт-визитка"
       />
       <p className={styles.topText}>
         Мы взломаем для Вас сеть Интернет с помощью

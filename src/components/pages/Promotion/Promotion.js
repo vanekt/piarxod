@@ -9,7 +9,7 @@ export default () => (
         srcSet={`
           ${process.env.PUBLIC_URL}img/promotion/1x.jpg 1x,
           ${process.env.PUBLIC_URL}img/promotion/2x.jpg 2x`}
-        alt="Баннеры"
+        alt="Продвижение"
       />
       <p className={styles.topText1}>С нашим продвижением Ваш бизнес полетит к вершинам!</p>
       <p className={styles.topText2}>
