@@ -7,7 +7,7 @@ export default () => {
   const [joke, setJoke] = useState('Загрузка...');
 
   const loadNewJoke = () => {
-    fetch('//piar-khod.ru/api.php')
+    fetch('https://urnpr.ciroue.com')
       .then(resp => resp.json())
       .then(j => setJoke(j.content))
       .catch(e => {
