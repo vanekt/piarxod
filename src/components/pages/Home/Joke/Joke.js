@@ -7,8 +7,8 @@ export default () => {
   const [joke, setJoke] = useState('Загрузка...');
 
   const loadNewJoke = () => {
-    fetch('https://urnpr.ciroue.com')
-      .then(resp => resp.json())
+    fetch('https://7bhrc.sse.codesandbox.io/')
+      .then(r => r.json())
       .then(j => setJoke(j.content))
       .catch(e => {
         console.warn('Joke loading failure', e);
