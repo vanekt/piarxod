@@ -4,15 +4,15 @@ import styles from './Joke.module.scss';
 const defaultJoke = `В глубине эдемских рощ отродясь не знали тёщ. Вот поэтому тот край назывался просто — рай.`;
 
 export default () => {
-  const [joke, setJoke] = useState('Загрузка...');
+  const [joke, setJoke] = useState({ text: 'Загрузка...', original: '' });
 
   const loadNewJoke = () => {
     fetch('https://7bhrc.sse.codesandbox.io/')
       .then(r => r.json())
-      .then(j => setJoke(j.content))
+      .then(j => setJoke(j))
       .catch(e => {
         console.warn('Joke loading failure', e);
-        setJoke(defaultJoke);
+        setJoke({ text: defaultJoke });
       });
   };
 
@@ -21,7 +21,7 @@ export default () => {
   return (
     <div className={styles.joke}>
       <h3>Анекдот дня!</h3>
-      <p>{joke}</p>
+      <p title={joke.original}>{joke.text}</p>
       <img
         onClick={loadNewJoke}
         className={styles.smile}
